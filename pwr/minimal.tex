@@ -1,0 +1,102 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usetheme[lang=pl,hr=true]{NewPwr}
+
+\author{Krystian Klimek}
+\title{Automatyzacja dokumentacji technicznej}
+\subtitle{Wykorzystanie narzędzi Sphinx oraz LaTeX (Beamer)}
+\institute{Politechnika Wrocławska}
+\date{\today}
+
+\begin{document}
+
+
+\begin{frame}
+ \maketitle
+\end{frame}
+
+\begin{frame}{Przeźrocze techniczne}
+ \begin{columns}
+  \begin{column}{0.5\textwidth}
+   \begin{block}{Informacje o zadaniu}
+    \begin{itemize}
+     \item \textbf{Kurs:} Technologie Informacyje
+     \item \textbf{Prowadzący:} [Piotr Czaja]
+     \item \textbf{Student:} Krystian Klimek
+     \item \textbf{Zadanie:} Prezentacja Beamer
+    \end{itemize}
+   \end{block}
+  \end{column}
+  \begin{column}{0.4\textwidth}
+   \centering
+   \textit{Zadanie ILAAN01 Pierwsza Prezentacja w Pakiecie Beamer}
+  \end{column}
+ \end{columns}
+\end{frame}
+
+\begin{frame}{Zaliczenie zadania}
+\begin{itemize}
+    \item Link do Repozytorium Git: https://github.com/Kerry4325/ILAAN01BeamerPrezentacja.git
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Plan prezentacji}
+ \tableofcontents
+\end{frame}
+
+
+\section{Narzędzie Sphinx}
+\begin{frame}{System Sphinx i reStructuredText}
+ \begin{itemize}
+  \item \textbf{Sphinx} to generator dokumentacji pierwotnie stworzony dla Pythona.
+  \item Wykorzystuje lekki język znaczników \texttt{reStructuredText} (rst).
+  \item Pozwala na eksport do wielu formatów:
+  \begin{itemize}
+   \item Strony HTML (interaktywne).
+   \item Pliki PDF (poprzez LaTeX).
+   \item ePub (dla czytników e-booków).
+  \end{itemize}
+ \end{itemize}
+\end{frame}
+
+\section{Integracja z LaTeX}
+\begin{frame}{Dlaczego LaTeX i Beamer?}
+ \begin{block}{Zalety rozwiązania}
+  \begin{itemize}
+   \item Pełna kontrola nad typografią i składem matematycznym.
+   \item Możliwość ponownego wykorzystania fragmentów kodu z raportów w prezentacjach.
+   \item Profesjonalny wygląd zgodny z Identyfikacją Wizualną PWr.
+  \end{itemize}
+ \end{block}
+\end{frame}
+
+\section{Podsumowanie}
+\begin{frame}{Podsumowanie}
+ \begin{itemize}
+  \item Opanowanie pakietu Beamer pozwala na szybkie tworzenie spójnych prezentacji.
+  \item Narzędzia typu "Text-to-Document" (Sphinx/LaTeX) są kluczowe w pracy inżyniera.
+  \item Prezentacja stanowi dopełnienie dokumentacji technicznej przygotowanej wcześniej.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Materiały źródłowe}
+ \begin{thebibliography}{10}
+  \bibitem{sphinx} Dokumentacja Sphinxa, \url{www.sphinx-doc.org}
+  \bibitem{pwr} System Identyfikacji Wizualnej PWr (Szablon NewPwr).
+  \bibitem{beamer} User Guide to the Beamer Class, T. Tantau.
+ \end{thebibliography}
+\end{frame}
+
+\begin{frame}
+ \centering
+ \Huge \textbf{Dziękuję za uwagę!}
+ 
+ \vspace{20pt}
+ \normalsize
+ Krystian Klimek \\
+\end{frame}
+
+\end{document}
